@@ -1,0 +1,714 @@
+:root{
+    --primary: #8b38ff;
+    --primary-light: #742fd4;
+    --light: #EBEAEC;
+    --dark: #212121;
+    --dark_one: #323746;
+    --dark-two: #242735;
+    --text: #494949;
+    --text-two: #EAECF3;
+    --text-three: #7a7a7a;
+    --bg-one: #f1f1f1;
+    --bg-two: #EAECF3;
+    --shadoww: 1px 1px 7px 2px rgba(139, 56, 255, 0.5);
+    --shadow: rgba(139, 56, 255, 0.075);
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    width: min(95%, 1600px);
+    /* max-width: 75%; */
+    margin-inline: auto;
+    /* margin: 0 auto; */
+}
+
+span{
+    color: var(--primary);
+}
+
+
+
+
+/* ========================= Common part End ========================= */
+
+
+/* ========================= Nav part Start ========================= */
+
+nav{
+    /* float: left; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--primary);
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    padding: 0 100px;
+    box-shadow: var(--shadoww);
+
+  }
+  label.logo{
+    color: var(--light);
+    font-size: 40px;
+    font-weight: 800;
+    cursor: pointer;
+  }
+  nav ul{
+    float: right;
+  }
+  nav ul li{
+    display: inline-block;
+  }
+  nav ul li a{
+    color: var(--light);
+    font-size: 17px;
+    font-weight: 600;
+    padding-left: 30px;
+    text-transform: uppercase;
+  }
+  
+  .checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+  
+
+/* ========================= Nav part End ========================= */
+
+
+/* ========================= Main part Start ========================= */
+.header{
+    height: 100vh;
+    background-color: var(--bg-one);
+}
+
+section .header-item{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding-top: 30vh;
+}
+
+.header .social ul{
+    list-style-type: none;
+    align-items: center;
+}
+
+.header .social ul li a{
+    font-size: 18px;
+    border-radius: 50%;
+    border: 2px solid var(--primary);
+    width: 36px;
+    height: 36px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 27px 0;
+    color: var(--primary);
+    transition: transform 0.6s;
+}
+
+.header .social ul li a:hover{
+    transform: translateY(-6px);
+}
+
+.header-item .detail{
+    max-width: 700px;
+}
+
+.detail h1{
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--dark_one);
+    text-transform: uppercase;
+    padding: 15px 0;
+}
+
+.detail h4{
+    font-size: 17px;
+    font-weight: 400;
+    color: var(--text);
+    padding: 15px 0;
+}
+
+.detail .my-detail{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--text);
+    padding: 15px 0;
+    padding-bottom: 30px;
+}
+
+section .header-item .image img{
+    height: 350px;
+    width: 350px;
+    box-shadow: 0 0 0 10px var(--primary);
+    border-radius: 50%;
+}
+/* ========================= Main part ENd ========================= */
+
+
+/* ========================= About part Start ========================= */
+.about{
+    background-color: var(--bg-two);
+    padding: 90px 0;
+}
+
+.about .detail{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.detail img{
+    height: 450px;
+    width: 450px;
+    border: 10px solid var(--bg-one);
+    border-radius: 10px;
+    box-shadow: 1px 1px 7px 2px var(--shadow);
+}
+
+.detail .about-right{
+    max-width: 700px;
+}
+
+.about-right h1{
+    font-size: 40px;
+    padding: 17px 0;
+    /* margin: -20px 0; */
+    line-height: 40px;
+}
+
+.about-right .para-bio{
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 0px;
+}
+
+.about-right .para-detail{
+    font-weight: 400;
+    line-height: 18px;
+    text-align: justify;
+    padding: 20px 0;
+    color: var(--text-three);
+}
+
+.detail .info{
+    display: flex;
+}
+
+.detail .info .info-one{
+    justify-content: center;
+    display: flex;
+    padding-right: 40px;
+}
+
+.detail .info .info-two{
+    justify-content: center;
+    display: flex;
+    
+}
+
+.info .left{
+    font-weight: 500;
+    padding-right: 15px;
+}
+
+.info .middle{
+    font-weight: 300;
+    color: var(--text-three);
+    padding-right: 15px;
+}
+
+.info .right{
+    font-weight: 300;
+    color: var(--text-three);
+}
+
+.left p{
+    padding: 5px 0;
+}
+
+.middle p{
+    padding: 5px 0;
+}
+
+.right p{
+    padding: 5px 0;
+}
+
+.about #button{
+    background-color: var(--bg-two);
+    margin-top: 20px;
+}
+
+.about #button:hover{
+    background-color: var(--primary);
+    transform: translateX(6px);
+}
+/* ========================= About part End ========================= */
+
+
+/* ========================= Skils part Start ========================= */
+.skills{
+    padding: 90px 0;
+    background-color: var(--bg-one);
+}
+
+.skills .all-skills{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skill-bar{
+    width: 370px;
+}
+
+.skill-bar h2{
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--text);
+    padding-bottom: 25px;
+}
+
+.skill-name:not(:last-child){
+    margin-bottom: 20px;
+}
+.details{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4px;
+}
+.bar{
+    background-color: var(--bg-two);
+    border: 1px solid #fff;
+    padding: 5px 6px;
+    border-radius: 20px;
+}
+.bar div{
+    width: 0;
+    height: 5px;
+    border-radius: 20px;
+    background-color: #8b38ff2d;
+    border: 1px solid var(--primary);
+    box-shadow: 0 0 5px var(--shadow);
+}
+#bar-one{
+    animation: fill-one 2s forwards;
+}
+@keyframes fill-one{
+    100%{
+        width: 90%;
+    }
+}
+#bar-two{
+    animation: fill-two 2s forwards;
+}
+@keyframes fill-two{
+    100%{
+        width: 75%;
+    }
+}
+#bar-three{
+    animation: fill-three 2s forwards;
+}
+@keyframes fill-three {
+    100%{
+        width: 82%;
+    }
+}
+#bar-four{
+    animation: fill-four 2s forwards;
+}
+@keyframes fill-four{
+    100%{
+        width: 68%;
+    }
+}
+
+/* ========================= Skills part End ========================= */
+
+
+/* ========================= services part Start ========================= */
+.services{
+    padding: 90px 0;
+    background-color: var(--bg-two);
+}
+
+.services .service-main{  
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border: 0px;
+    margin: auto; 
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1100px;
+}
+
+.services .service-main .service-box{
+    width: 310px;
+    height: 400px;
+    margin: 10px 0;
+    padding: 130px 70px 10px 39px;
+    background-color: var(--bg-one);
+    box-shadow: 1px 1px 7px 2px var(--shadow);
+    transition: transform 0.6s;
+    border-radius: 5px;
+}
+
+.services .service-main .service-box:hover{
+    box-shadow: 3px 3px 10px 2px var(--shadow);
+    transform: translateY(-6px);
+}
+
+.services .service-main .service-box #top{
+    font-size: 3rem;
+    color: var(--primary);
+    font-weight: 700;
+    margin-left: -2px;
+    padding-bottom: 10px;
+}
+
+.services .service-main .service-box h2{
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: var(--text);
+}
+
+.services .service-main .service-box .learn{
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    cursor: pointer;
+    transition: transform 0.6s;
+}
+
+.services .service-main .service-box .learn:hover{
+    color: var(--primary);
+    transform: translateX(6px);
+}
+
+.services .service-main .service-box p{
+    font-size: 15px;
+    color: var(--text-three);
+    padding-right: 5px;
+}
+
+.services .service-main .service-box .bottom{
+    font-size: 1.1rem;
+    color: var(--primary);
+}
+/* ========================= services part End ========================= */
+
+
+/* ========================= portfolio part Start ========================= */
+.portfolio{
+    padding: 90px 0;
+    background-color: var(--bg-one);
+}
+
+
+.one{
+    grid-area: a;
+}
+.two{
+    grid-area: b;
+}
+.three{
+    grid-area: c;
+}
+.four{
+    grid-area: d;
+}
+.five{
+    grid-area: e;
+}
+.six{
+    grid-area: f;
+}
+.seven{
+    grid-area: g;
+}
+.eight{
+    grid-area: h;
+}
+
+.portfolio .portfolio-main img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.portfolio .portfolio-main .style{
+    border: 8px solid #8b38ff11;
+}
+
+.portfolio .portfolio-main{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 15px;
+    grid-template-areas: 
+    "a a a b"
+    "a a a c"
+    "a a a d"
+    "e f g h";
+    width: 60%;
+    margin: 0 auto;
+}
+
+/* ========================= portfolio part End ========================= */
+
+
+/* ========================= contact part Start ========================= */
+.contact{
+    padding: 90px 0;
+    background-color: var(--bg-two);
+}
+
+.contact .main-contact{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact .main-contact .contact-left{
+    height: auto;
+    max-width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.contact .main-contact .contact-left h2{
+    font-weight: 600;
+    font-size: 2.4rem;
+    padding-bottom: 30px;
+}
+
+.contact .main-contact .contact-left p{
+    font-weight: 400;
+    font-size: 1.2rem;
+    padding-bottom: 30px;
+}
+.contact .main-contact .contact-left img{
+    height: 36%;
+    width: 36%;
+}
+
+.contact .contact-right{
+    height: auto;
+    width: 40%; 
+}
+
+.contact-right .form .common{
+    background-color: transparent;
+    border: 1px solid var(--primary);
+    border-radius: 5px;
+    padding: 17px 20px;
+    width: 100%;
+    font-size: 17px;
+}
+
+.contact .contact-right .phone-email{
+    display: flex;
+    margin: 10px 0;
+}
+
+.contact .contact-right #phone{
+    width: 50%;
+    margin-right: 5px;
+}
+
+.contact .contact-right #mail{
+    width: 50%;
+    margin-left: 5px;
+}
+
+.contact-right .form .message textarea{
+    height: 160px;
+}
+
+.main-contact .contact-right .message-button{
+    margin: 15px 0;
+    background-color: var(--primary);
+    color: var(--bg-two);
+    transition: transform 0.6s;
+}
+.main-contact .contact-right .message-button:hover{
+    background-color: transparent;
+    color: var(--primary);
+    transform: translateX(6px);
+}
+/* ========================= contact part End ========================= */
+
+
+/* ========================= Footer part Start ========================= */
+footer{
+    padding: 50px  0;
+    background-color: #8b38ffdc;
+    color: var(--text-two);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+ .last{
+    background-color: var(--primary);
+    color: var(--text-two);
+    padding: 30px 0;
+    text-align: center;
+}
+
+footer h2{
+    font-size: 2.5rem;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+footer .footer-info{
+    font-size: 1rem;
+    font-weight: 400;
+    padding-bottom: 30px;
+    max-width: 600px;
+    text-align: center;
+}
+
+footer ul{
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    list-style: none;
+}
+
+footer .social ul li a{
+    color: var(--text-two);
+    font-size: 1.4rem;
+    transition: transform 0.6s;
+}
+
+footer .social ul li a:hover{
+    transform: translateY(-6px);
+    color: var(--dark);
+}
+/* ========================= Footer part End ========================= */
+
+
+/* ====================== Button start ====================== */
+.detail-button{
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding: 12px 20px;
+    border: 1px solid var(--primary);
+    cursor: pointer;
+    margin-right: 20px;
+    transition: transform 0.6s;
+    background-color: transparent;
+}
+
+.detail-button:hover{
+    transform: translateX(-6px);
+    background-color: var(--primary);
+    color: var(--light);
+}
+/* ====================== Button end ====================== */
+
+
+/* ================= Section head part start ================= */
+.head .heading{
+    display: flex;
+    align-items: center;
+    padding-bottom: 7px;
+}
+
+.head .heading .title{
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--dark-two);
+    margin-right: 20px;
+}
+
+.head .heading i{
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.head p{
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.head{
+    padding-bottom: 50px;
+}
+/* ================= Section head part end ================= */
+
+/* ================= GoToTop custom design================= */
+.totop {
+	position: fixed;
+	bottom: 50px;
+	right: 30px;
+	font-size: 2rem;
+	background: rgba(116, 47, 212, 0.8);
+	color: var(--light);
+	height: auto;
+	width: 3rem;
+	text-align: center;
+	border-radius: 3px;
+    transition: transform 0.6s;
+}
+
+.totop:hover{
+    transform: translateY(-5px);
+    background: var(--primary);
+    color: var(--bg-two);
+}
+
+/* ================= Scrollbar Styling ================= */
+::-webkit-scrollbar {
+    width: 8px;
+}
+ 
+::-webkit-scrollbar-track {
+    background-color: var(--light);
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 20px;
+    background: var(--primary); 
+}
