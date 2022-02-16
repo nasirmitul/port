@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="Images/logo.png" type="image">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="../CSS/myDashLogin.css">
+
+    <title>Dashboard Login</title>
+</head>
+    <body>
+        <div class="container">
+            <div class="form">
+                <h1>Login To Dashboard</h1>
+                <div class="user input-box">
+                    <i class="uil uil-envelope"></i>
+                    <input id="username" class="username" type="text" placeholder="username" required>
+                </div>
+                <div class="pass input-box">
+                    <i class="uil uil-key-skeleton-alt"></i>
+                    <input id="password" class="password" type="password" placeholder="password" required>
+                    <span class="eyes" onclick="pass()">
+                        <i id="hide1" class="eye uil uil-eye"></i>
+                        <i id="hide2" class="eye uil uil-eye-slash"></i>
+                    </span>
+                </div>
+
+                <p id="message">p</p>
+
+                <button type="button" class="login-button" onclick="validate()"> Login</button>
+            </div>
+        </div>
+
+        <script src="../JS/myDashLogin.js"></script>
+    </body>
+</html>

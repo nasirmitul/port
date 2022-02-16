@@ -712,3 +712,8 @@ footer .social ul li a:hover{
     border-radius: 20px;
     background: var(--primary); 
 }
+
+
+.myDashLogin{
+    display: none;
+}

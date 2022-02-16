@@ -30,7 +30,7 @@
         color: var(--dark);
         transform: translateX(-3px);
     }
-    ul{
+    nav .menu{
       position: fixed;
       width: 80%;
       height: 100vh;
@@ -41,16 +41,16 @@
       text-align: center;
       transition: all .5s;
     }
-    nav ul li{
+    nav ul .menu-li{
       display: block;
       margin: 50px 0;
       line-height: 30px;
       
     }
-    nav ul li a{
+    nav ul .menu-li a{
       font-size: 20px;
     }
-    a:hover,a.active{
+    .menu-a:hover,.menu-a.active{
       background: none;
       color: var(--dark);
     }
@@ -82,9 +82,11 @@
     .header-item .social{
         grid-area: c;
     }
+
+    
     .header-item .detail{
         grid-area: b;
-        width:350px;
+        width:20%;
     }
     .header-item .image{
         grid-area: a;
@@ -133,4 +135,5 @@
         justify-content: center;
     }
 }
+
 
